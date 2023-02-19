@@ -1,0 +1,36 @@
+.dropdownWrapper {
+    position: relative;
+    max-width: 300px;
+}
+
+.dropdownButton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2px;
+    background: white;
+    border: 2px solid rgb(55,177,242);
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 10px;
+    color: rgb(55,177,242);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.dropdownButton:hover {
+    background: rgb(55,177,242);
+    color: white;
+}
+
+.itemsList {
+    position: absolute;
+    list-style-type: none;
+    padding: 5px 0;
+    margin: 0;
+    z-index: 2;
+    width: 100%;
+}

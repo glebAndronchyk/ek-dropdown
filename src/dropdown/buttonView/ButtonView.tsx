@@ -2,12 +2,14 @@ import {FC} from "react";
 import ButtonViewPropsInterface from "./buttonViewProps.interface";
 import getNameInitials from "../../utils/getNameInitials";
 
+import './buttonView.css'
+
 const ButtonView: FC<ButtonViewPropsInterface> = (props) => {
     const {name, surname, image} = props;
 
     return (
-        <div>
-            {image && <img src={image} alt="userPhoto"/>}
+        <div className='buttonView'>
+            {image && <img className='dropdownItem__image' src={image} alt="userPhoto"/>}
             {surname ? getNameInitials(name, surname) : name}
         </div>
     );
